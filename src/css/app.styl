@@ -1,0 +1,65 @@
+// app global css
+@media only screen and (max-width: 600px) {
+    .q-page-container-cms{
+        overflow-y: hidden;
+        height: 100vh;
+    }
+    .login{
+        margin-top: 30%;
+        .input-login{
+            border: none;
+            width: 70%;
+            margin-bottom: 40%;
+            border-bottom: 1px solid #c4c4c4;
+        }
+        .input-login:active{
+            outline: none;
+        }
+        .button-login{
+            justify-self: center;
+            width: 70%
+            font-size: 12px;
+            color: red;
+            padding: 5px;
+            border-radius: 6px;
+            border: 1px solid;
+            margin: auto;
+        }
+        .button-login:active{
+            background-color: red;
+            color: white;
+        }
+    }   
+    .card-opsi{
+        margin-top: 50%;
+        .card{
+            margin-top: top;
+            width: 25%;
+            background-color: red;
+            padding-left: 5px;
+            padding-right: 5px;
+            transition: all 0.7s;
+            border-radius: 5px;
+            margin: auto;
+            img{
+                width: 100%;
+                border-radius: 5px;
+                margin-top: 10px;
+                padding-left: 10px;
+                padding-right: 10px;
+            }
+            h1{
+                padding-top: 5px;
+                font-size: 12px;
+                font-weight: 500;
+                text-align: center;
+                padding-bottom: 15px;
+                color: white;
+            }
+            &:active{
+                box-shadow: 3px 3px 3px 1px rgba(255, 30, 30, 0.6);
+            }
+        }
+    } 
+    
+}
