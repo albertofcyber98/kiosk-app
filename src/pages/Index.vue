@@ -1,10 +1,12 @@
 <template>
-  <div class="card-opsi">
-    <div class="card">
-    <div>
-      <img src="../assets/front.png" alt="">
-    </div>
-    <h1>Food & Beverage</h1>
+  <div class="position">
+    <div class="card-opsi">
+      <div class="card" @click="go()">
+      <div>
+        <img src="../assets/front.png" alt="">
+      </div>
+      <h1>Food & Beverage</h1>
+      </div>
     </div>
   </div>
 </template>
@@ -13,8 +15,12 @@
 </style>
 
 <script>
-
 export default {
-  name: 'PageIndex'
+  name: 'PageIndex',
+  methods: {
+    go () {
+      this.$router.push('/menu')
+    }
+  }
 }
 </script>

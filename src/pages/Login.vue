@@ -4,7 +4,7 @@
     <p style="text-align: center; font-size:12px">Please input setup code to use this kiosk</p>
     <div style="text-align: center">
     <input type="text" class="input-login">
-    <div @click="go()" class="button-login">Check</div>
+    <div @click="go()" class="button-login">CHECK</div>
     </div>
   </q-page>
 </template>

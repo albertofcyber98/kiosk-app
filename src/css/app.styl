@@ -1,8 +1,12 @@
 // app global css
 @media only screen and (max-width: 600px) {
+    .q-layout{
+        background-image: url('../assets/front.png');
+        background-size: cover;
+    }
     .q-page-container-cms{
-        overflow-y: hidden;
         height: 100vh;
+        overflow-y: hidden;
     }
     .login{
         margin-top: 30%;
@@ -18,48 +22,223 @@
         .button-login{
             justify-self: center;
             width: 70%
-            font-size: 12px;
-            color: red;
-            padding: 5px;
-            border-radius: 6px;
+            font-size: 10px;
+            color: #BF2222;
+            padding: 9px;
+            border-radius: 20px;
             border: 1px solid;
             margin: auto;
         }
         .button-login:active{
-            background-color: red;
+            background-color: #BF2222;
             color: white;
         }
-    }   
-    .card-opsi{
+    }  
+    .position{
         margin-top: 50%;
-        .card{
-            margin-top: top;
-            width: 25%;
-            background-color: red;
-            padding-left: 5px;
-            padding-right: 5px;
-            transition: all 0.7s;
-            border-radius: 5px;
-            margin: auto;
-            img{
-                width: 100%;
+        .card-opsi{
+            display:flex;
+            justify-content: center;
+            .card{
+                margin-top: top;
+                width: 20%;                
+                background-color: #BF2222;
+                padding-left: 5px;
+                padding-right: 5px;
+                transition: all 0.7s;
                 border-radius: 5px;
-                margin-top: 10px;
-                padding-left: 10px;
-                padding-right: 10px;
-            }
-            h1{
+                margin-left: 2px;
                 padding-top: 5px;
-                font-size: 12px;
-                font-weight: 500;
                 text-align: center;
-                padding-bottom: 15px;
-                color: white;
+                margin-right: 2px;
+                img{
+                    width: 80%;
+                    border-radius: 5px;
+                    margin-top: 10px;
+                    padding-left: 10px;
+                    padding-right: 10px;
+                }
+                h1{
+                    padding-top: 5px;
+                    font-size: 12px;
+                    font-weight: 400;
+                    text-align: center;
+                    padding-bottom: 5px;
+                    color: white;
+                }
+                &:active{
+                    box-shadow: 3px 3px 3px 1px rgba(191, 34, 34, 0.25);
+                }
             }
-            &:active{
-                box-shadow: 3px 3px 3px 1px rgba(255, 30, 30, 0.6);
+        } 
+    } 
+    .position-btn-left{
+        position: fixed;
+        bottom: 5px;
+        left: 6px;
+    }
+    .position-btn-right{
+        position: fixed;
+        right: 6px;
+        bottom: 5px;
+    }
+    .position-text-center{
+        text-align: center;
+        p{
+            font-size: 8px;
+            margin-top: 7px;
+            color: #c4c4c4;
+        }
+        h6{
+            margin-top: -10px;
+            font-weight: 500;
+        }
+    }
+    .button-orange{
+        background-color: #FF7F3F;
+        color: white;
+        font-size: 8px;
+        font-weight: 200;
+        border-radius: 20px
+        padding: 5px 0px;
+        width: 100px;
+        text-align: center;
+        transition: all 0.5s;
+        border: 1px solid #FF7F3F;
+    }
+    .button-orange:active{
+        background-color: white;
+        color: #FF7F3F;
+    }
+    .menu{
+        display: flex;
+        background-color:#fbfbfb; 
+        .sidebar{
+            width: 30%;
+            background-color: #f3f3f3;
+            height: 100vh;
+            .menu-bar{
+                width: 100%;
+                display: flex;
+                .btn-bar-active{
+                    background-color: #BF2222;
+                    width: 100%;
+                    height: 30px;
+                    margin: auto;
+                    h6{
+                        margin-top: 9px;
+                        color:white;
+                        font-size: 9px;
+                        font-weight: 400;
+                        text-align: center;
+                    }
+                }
+                .btn-bar{
+                    background-color: white;
+                    width: 100%;
+                    height: 30px;
+                    margin: auto;
+                    h6{
+                        margin-top: 9px;
+                        color:#BF2222;
+                        font-size: 9px;
+                        font-weight: 400;
+                        text-align: center;
+                    }
+                }
+            }
+            .list{
+                .bg-list-active{
+                    background-color: white;
+                    padding: 6px;
+                    h1{
+                        font-size: 10px;
+                        font-weight: 500;
+                    }
+                }
+                .bg-list{
+                    padding: 6px;
+                    h1{
+                        font-size: 10px;
+                    }
+                }
             }
         }
-    } 
+        .main-menu{
+            width: 70%;
+            margin-top: -3px
+            h1{
+                font-size: 14px;
+                font-weight: 400;
+                margin-left: 10px
+            }
+            .product-menu{
+                .card-product{
+                    float: left;
+                    width: 45%;
+                    margin-left: 10px;
+                    background-color: white;
+                    box-shadow: 3px 3px 3px 1px rgba(196, 196, 196, 0.2);
+                    border-radius: 5px;
+                    margin-bottom: 10px;
+                    img{
+                        width: 100%;
+                        border-radius: 5px 5px 0px 0px;
+                    }
+                    h1{
+                        font-size: 10px;
+                        margin-left: 5px;
+                        font-weight: 500;
+                    }
+                    h2{
+                        font-size: 8px;
+                        margin-top: -2px;
+                        margin-left: 5px;
+                        color: #c4c4c4;
+                    }
+                    .price{
+                        display: flex;
+                        width: 100%;
+                        h3{
+                            margin-bottom: 0px;
+                            font-size: 8px;
+                            margin-top: -20px;
+                            margin-left: 5px;
+                            color: #BF2222;
+                        }
+                        .counter{
+                            position: absolute;
+                            margin-top: -8px;
+                            margin-left: 60px;
+                            input{
+                                width: 30px;
+                                height: 20px;
+                                border: none;
+                                text-align: center;
+                                font-size: 10px;
+                            }
+                            button{
+                                background-color: white;
+                                border: none;
+                                font-size: 12px;
+                            }
+                            button:active{
+                                background-color: rgb(244, 244, 244);
+                                border: none;
+                                font-size: 12px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .footer{
+        position: fixed;
+        bottom: 0px;
+        width: 100%;
+        height: 8%;
+        background-color: white;
+    }
     
 }
