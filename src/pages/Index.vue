@@ -1,18 +1,17 @@
 <template>
   <div class="position">
-    <div class="card-opsi">
+    <div class="card-opsi row justify-center">
       <div class="card" @click="go()">
-      <div>
-        <img src="../assets/front.png" alt="">
-      </div>
-      <h1>Food & Beverage</h1>
+        <div>
+          <img src="../assets/front.png" alt="" />
+        </div>
+        <h1>Food & Beverage</h1>
       </div>
     </div>
   </div>
 </template>
 
-<style>
-</style>
+<style></style>
 
 <script>
 export default {

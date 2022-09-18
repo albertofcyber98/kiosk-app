@@ -1,6 +1,7 @@
 <template>
   <div id="q-app">
     <router-view />
+    {{ this.$store.state.test }}
   </div>
 </template>
 

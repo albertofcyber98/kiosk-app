@@ -33,15 +33,13 @@
             background-color: #BF2222;
             color: white;
         }
-    }  
+    }
     .position{
         margin-top: 50%;
         .card-opsi{
-            display:flex;
-            justify-content: center;
             .card{
                 margin-top: top;
-                width: 20%;                
+                width: 20%;
                 background-color: #BF2222;
                 padding-left: 5px;
                 padding-right: 5px;
@@ -70,8 +68,8 @@
                     box-shadow: 3px 3px 3px 1px rgba(191, 34, 34, 0.25);
                 }
             }
-        } 
-    } 
+        }
+    }
     .position-btn-left{
         position: fixed;
         bottom: 5px;
@@ -80,6 +78,11 @@
     .position-btn-right{
         position: fixed;
         right: 6px;
+        bottom: 5px;
+    }
+    .position-btn-center{
+        position: fixed;
+        left: 38%;
         bottom: 5px;
     }
     .position-text-center{
@@ -112,17 +115,15 @@
     }
     .menu{
         display: flex;
-        background-color:#fbfbfb; 
+        background-color:#fbfbfb;
         .sidebar{
             width: 30%;
             background-color: #f3f3f3;
             height: 100vh;
             .menu-bar{
-                width: 100%;
-                display: flex;
                 .btn-bar-active{
                     background-color: #BF2222;
-                    width: 100%;
+                    width: 50%;
                     height: 30px;
                     margin: auto;
                     h6{
@@ -135,7 +136,7 @@
                 }
                 .btn-bar{
                     background-color: white;
-                    width: 100%;
+                    width: 50%;
                     height: 30px;
                     margin: auto;
                     h6{
@@ -166,17 +167,19 @@
         }
         .main-menu{
             width: 70%;
-            margin-top: -3px
+            margin-top: -3px;
+            height: 67vh;
+            overflow-y: scroll;
             h1{
                 font-size: 14px;
                 font-weight: 400;
                 margin-left: 10px
             }
             .product-menu{
+                margin-left: 10px;
                 .card-product{
-                    float: left;
-                    width: 45%;
-                    margin-left: 10px;
+                    width: 48%;
+                    margin-right: 5px;
                     background-color: white;
                     box-shadow: 3px 3px 3px 1px rgba(196, 196, 196, 0.2);
                     border-radius: 5px;
@@ -197,8 +200,7 @@
                         color: #c4c4c4;
                     }
                     .price{
-                        display: flex;
-                        width: 100%;
+                        margin-bottom: -5px;
                         h3{
                             margin-bottom: 0px;
                             font-size: 8px;
@@ -207,30 +209,39 @@
                             color: #BF2222;
                         }
                         .counter{
-                            position: absolute;
                             margin-top: -8px;
-                            margin-left: 60px;
+                            margin-right: 2px;
                             input{
                                 width: 30px;
-                                height: 20px;
+                                height: 10px;
                                 border: none;
                                 text-align: center;
-                                font-size: 10px;
-                            }
-                            button{
-                                background-color: white;
-                                border: none;
-                                font-size: 12px;
-                            }
-                            button:active{
-                                background-color: rgb(244, 244, 244);
-                                border: none;
-                                font-size: 12px;
+                                font-size: 8px;
                             }
                         }
                     }
                 }
             }
+        }
+    }
+    .counter{
+        input{
+            width: 60px;
+            height: 18px;
+            border: none;
+            text-align: center;
+            font-size: 8px;
+            background-color:#fbfbfb;
+        }
+        button{
+            background-color: white;
+            border: none;
+            font-size: 12px;
+        }
+        button:active{
+            background-color: rgb(244, 244, 244);
+            border: none;
+            font-size: 12px;
         }
     }
     .footer{
@@ -240,5 +251,8 @@
         height: 8%;
         background-color: white;
     }
-    
+    .bg-gray{
+        background-color: #7e7d7d;
+        border-radius: 5px;
+    }
 }
